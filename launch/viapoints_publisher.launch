@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="viapoints_publisher" type="viapoints_publisher_node" name="viapoints_publisher_node" output="screen" respawn="true">
+    <remap from="global_path" to="/move_base/TebLocalPlannerROS/global_plan" />
+    <remap from="via_points" to="/move_base/TebLocalPlannerROS/via_points" />
+  </node>
+</launch>
